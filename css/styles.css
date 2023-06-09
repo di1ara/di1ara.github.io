@@ -1,10 +1,10 @@
 html {
-    font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
 
 body {
+    font-family: 'Montserrat',sans-serif;
     margin: 0
 }
 
@@ -2990,7 +2990,6 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 
 .text-hide {
-    font: 0/0 a;
     color: transparent;
     text-shadow: none;
     background-color: transparent;
@@ -3011,9 +3010,6 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
     height: 20px
 }
 
-@-ms-viewport {
-    width: device-width
-}
 
 .visible-xs, .visible-sm, .visible-md, .visible-lg {
     display: none !important
