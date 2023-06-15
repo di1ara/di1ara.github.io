@@ -3,30 +3,46 @@
 <head>
     <title>Developer and Designer Website</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700&family=Montserrat:wght@400;500&family=Oswald:wght@400;500&display=swap" rel="stylesheet"></head>
 <body>
 <header>
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="navbar">
+
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
+
+<section id="first-page">
+    <div class="first-page-content">
+    <h2>Hi, I'm Dilara</h2>
+    <h3>Developer + Designer</h3>
+    </div>
+</section>
 
 <section id="about">
     <div class="about-content">
         <div class="about-text">
-            <h3>Hi, I'm Dilara</h3>
+            <h3>About Me</h3>
             <p>Welcome to my website! I'm a passionate and dedicated individual with a unique blend of psychology and programming skills. With a background in psychology, I bring a deep understanding of human behavior, problem-solving, and critical thinking to my programming projects.</p>
             <p>As a current student of computer programming and analysis, I constantly strive to expand my knowledge and stay up-to-date with the latest technologies. I love crafting innovative software solutions that address complex challenges and deliver meaningful results.</p>
             <p>Whether it's designing interactive web applications, optimizing program performance, or analyzing data to derive valuable insights, I enjoy the thrill of turning ideas into reality. Join me on this exciting journey as we explore the limitless possibilities of technology together!</p>
         </div>
         <div class="about-image">
-            <img src="profile-picture.jpg" alt="Profile Picture">
+            <img src="images/my-picture2.JPG" alt="Profile Picture">
         </div>
     </div>
 </section>
@@ -35,7 +51,7 @@
     <h2>Portfolio</h2>
     <div class="project-container">
         <div class="project-card">
-            <img src="project1.jpg" alt="Project 1">
+            <img src="images/project1-picture.jpg" alt="Project 1">
             <div class="project-details">
                 <h3>Project 1</h3>
                 <p>This project showcases my skills in HTML, CSS, JavaScript, and Bootstrap. It is a website for a construction company, featuring a modern and responsive design. The layout is built using HTML and styled with CSS, including custom styles and Bootstrap components for enhanced responsiveness and visual appeal. JavaScript is used to add interactivity and dynamic functionality to the website, such as form validation and interactive elements.</p>
@@ -83,11 +99,11 @@
     <div class="contact-info">
         <div class="contact-item">
             <i class="fas fa-map-marker"></i>
-            <p>123 Street, City, Country</p>
+            <p>Toronto/ON Canada</p>
         </div>
         <div class="contact-item">
             <i class="fas fa-envelope"></i>
-            <p><a href="mailto:example@example.com">example@example.com</a></p>
+            <p><a href="mailto:dilara.yalniz@proton.me">dilara.yalniz@proton.me</a></p>
         </div>
         <div class="contact-item">
             <i class="fas fa-phone"></i>
@@ -97,7 +113,7 @@
 </section>
 
 <footer>
-    <p>&copy; 2023 Your Name</p>
+    <p>2023 DY</p>
 </footer>
 </body>
 </html>
