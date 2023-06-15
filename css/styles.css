@@ -5,25 +5,29 @@ body {
     background-color: #ECF2FF;
     
 }
+audio {
+    display: none; /* Hide the audio player */
+}
 
 
 /* Navbar styles */
 
 nav {
     position: fixed;
-    top: 0;
-    left: 0;
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
-    background-color: #6096B4;
+    background-color: dimgrey;
     color: #F8F6F4;
     padding: 10px;
+    z-index: 10; /* Set a higher z-index for the navbar */
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
+    padding-right: 20px;
 }
 
 nav ul li {
@@ -38,7 +42,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #635985;
+    color: #333333;
 }
 
 /* Main content styles */
@@ -58,39 +62,39 @@ p {
 }
 /* First Page Section*/
 #first-page {
-    background-image: url("../images/background-image2.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Adjust the height to occupy the full viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
+    position: relative;
+    height: 100vh;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Set a lower z-index for the video */
+    object-fit: cover;
 }
 
 .first-page-content {
-    max-width: 800px;
-    padding: 20px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding-top: 50vh;
 }
-
-.first-page-content h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    font-family: 'Barlow Condensed', sans-serif;
-
-
-
-}
-
-.first-page-content h3 {
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
-
-
-
-}
-
 /* About Section */
 #about {
     padding: 50px 0;
@@ -131,7 +135,7 @@ p {
 }
 /* Portfolio Section */
 #portfolio {
-    padding: 40px;
+    padding: 50px;
 }
 
 #portfolio h2 {
@@ -188,7 +192,7 @@ p {
 }
 /* Education section styles */
 #education {
-    padding: 20px;
+    padding: 50px;
 }
 
 .education-card {
@@ -200,7 +204,7 @@ p {
 }
 
 .education-card h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -239,6 +243,10 @@ h2 {
 .contact-item p {
     margin: 0;
     font-size: 16px;
+}
+footer{
+    display: flex;
+    justify-content: center;
 }
 
 /* Responsive layout */
