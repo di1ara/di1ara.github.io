@@ -1,10 +1,12 @@
-const backgroundMusic = document.getElementById('background-music');
+document.addEventListener('DOMContentLoaded', function() {
+    const backgroundMusic = document.getElementById('background-music');
+    backgroundMusic.play();
+});
 
-// Function to pause the background music
 function pauseBackgroundMusic() {
+    const backgroundMusic = document.getElementById('background-music');
     backgroundMusic.pause();
 }
 
-// Add a beforeunload event listener to pause the music when leaving the page
 window.addEventListener('beforeunload', pauseBackgroundMusic);
 
