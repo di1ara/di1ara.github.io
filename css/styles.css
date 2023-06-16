@@ -6,7 +6,35 @@ body {
     
 }
 
+.button{
+    padding-left: 20px;
+    padding-right: 20px;
 
+    /* Add background image or icon */
+    background-position: center;
+    background-size: 20px 20px;
+
+    /* Adjust colors and border */
+    background-color: #333;
+    color: #fff;
+    border-width: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    z-index: 9999;
+
+    /* Add hover effect */
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555;
+}
+.playing {
+    /* Add the desired styles for the playing state */
+    background-color: #CD1818;
+    /* ... other styles ... */
+}
 /* Navbar styles */
 
 nav {
@@ -14,8 +42,10 @@ nav {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    background-color: dimgrey;
+    background-color: #383838;
     color: #F8F6F4;
+    font-weight: 500;
+    opacity: 0.8;
     padding: 10px;
     z-index: 10; /* Set a higher z-index for the navbar */
 }
@@ -39,7 +69,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #333333;
+    color: #CD1818;
 }
 
 /* Main content styles */
@@ -89,23 +119,30 @@ p {
     position: relative;
     z-index: 1;
     text-align: center;
-    color: #fff;
-    padding-top: 50vh;
+    color: #F2F2F2;
+    padding-top: 40vh;
+}
+.first-page-content h2{
+    font-size: 27px;
+}
+.first-page-content h1{
+    font-size: 30px;
 }
 /* About Section */
 #about {
-    padding: 50px 0;
+    padding: 50px;
+    background-color: #F2F2F2;
 }
 
 .about-content {
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
 .about-text {
     max-width: 600px;
-    text-align: center;
+    flex: 1;
+
 }
 
 .about-text h3 {
@@ -122,13 +159,16 @@ p {
 }
 
 .about-image {
-    margin-top: 20px;
+    flex:1;
+    text-align: right;
+    padding-right: 50px;
+
 }
 
 .about-image img {
-    width: 200px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-radius: 10%;
+    box-shadow: 0 0 10px #333;
 }
 /* Portfolio Section */
 #portfolio {
@@ -150,7 +190,7 @@ p {
 
 .project-card {
     width: 300px;
-    background-color: #D8CCA3;
+    background-color: #CDBE78;
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 20px;
