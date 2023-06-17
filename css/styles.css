@@ -130,7 +130,7 @@ p {
 }
 /* About Section */
 #about {
-    padding: 50px;
+    padding: 50px ;
     background-color: #F2F2F2;
 }
 
@@ -139,10 +139,22 @@ p {
     align-items: center;
 }
 
-.about-text {
-    max-width: 600px;
+.about-image {
     flex: 1;
+    text-align: left;
+    padding-right: 50px;
+}
 
+.about-image img {
+    width: 400px; /* Adjust the width as desired */
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 0 0 10px #333;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
 }
 
 .about-text h3 {
@@ -156,19 +168,6 @@ p {
     line-height: 1.6;
     margin-bottom: 20px;
     color: #666;
-}
-
-.about-image {
-    flex:1;
-    text-align: right;
-    padding-right: 50px;
-
-}
-
-.about-image img {
-    width: 100%;
-    border-radius: 10%;
-    box-shadow: 0 0 10px #333;
 }
 /* Portfolio Section */
 #portfolio {
